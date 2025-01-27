@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div class="custom-scrollbar" id="customScrollbar"></div>
+    <header class="header">
+      <a href="/" class="logo">
+        <img src="./src/pharmacy-svgrepo.svg" alt="Logo" />
+        <span>Our brand</span>
+      </a>
+      <nav class="nav-center">
+        <a href="https://kabermedhasni.github.io/pharmacy-project/pharmacy-project/" class="nav-link">Home</a>
+        <a href="https://kabermedhasni.github.io/pharmacy-project/pharmacy-project/shop.html" class="nav-link">Shop</a>
+        <a href="https://kabermedhasni.github.io/pharmacy-project/pharmacy-project/contact.html#" class="nav-link activated">Contact Us</a>
+      </nav>
+      <div class="nav-right">
+        <div class="cart-container">
+          <a class="nav-cart-link"
+            ><img
+              class="cart-icon"
+              src="./src/cart_svgrepo.svg"
+              alt="cart-icon"
+            />
+            Cart <span class="cart-count">0</span></a
+          >
+          <div class="cart-box">
+            <div class="cart-items">
+              <div class="cart-item">
+                <img
+                  src="https://www.medicalsintl.com/kms/Utils/GetImage?location=/Content/uploads/Division/clear_1day220107093354421~.png&width=374&height=211"
+                  alt="Item 1"
+                />
+                <div class="item-info">
+                  <h4>Clear 1-day</h4>
+                  <span>540</span>
+                </div>
+                <button>Remove</button>
+              </div>
+              <div class="cart-item">
+                <img
+                  src="https://media.pharmaciedesdrakkars.com/media/images/products/doliprane-1000-mg-doliprane8-1688647599.jpg"
+                  alt="Item 2"
+                />
+                <div class="item-info">
+                  <h4>doliprane 1000mg</h4>
+                  <span>300</span>
+                </div>
+                <button>Remove</button>
+              </div>
+              <div class="cart-item">
+                <img
+                  src="https://www.chhealthsystem.com/images/1000x550/buy-amoxicillin-online.png"
+                  alt="Item 3"
+                />
+                <div class="item-info">
+                  <h4>Amoxicillin-Tablets 500mg</h4>
+                  <span>370</span>
+                </div>
+                <button>Remove</button>
+              </div>
+            </div>
+            <div class="cart-footer">Total: 1,210</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="contact-main">
+      <h1>Contact Us</h1>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>
+            We're here to help and answer any question you might have. We look
+            forward to hearing from you!
+          </p>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://kabermedhasni.github.io/pharmacy-project/pharmacy-project/">Home</a></li>
+          <li><a href="https://kabermedhasni.github.io/pharmacy-project/pharmacy-project/shop.html">Shop</a></li>
+          <li><a href="https://kabermedhasni.github.io/pharmacy-project/pharmacy-project/contact.html#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>Email: L1@SupNum.mr</p>
+        <p>Phone: +222 20 25 20 26</p>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+    <script src="main.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
