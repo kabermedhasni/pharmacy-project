@@ -37,9 +37,15 @@ function initializeCart() {
     ) {
       cartBox.classList.remove("active");
     }
+
+    // Add this block to handle removing items from cart
+    if (target.classList.contains("remove-from-cart")) {
+      const index = Number.parseInt(target.getAttribute("data-index"), 10);
+      removeFromCart(index);
+    }
   });
 
-  loadCart(); // Add this line to load the cart when initializing
+  loadCart(); // Load the cart when initializing
 }
 
 function updateCart() {
@@ -70,7 +76,7 @@ function updateCart() {
     }
 
     if (cartFooter) {
-      cartFooter.textContent = `Total: ${total.toFixed(2)} MRO`;
+      cartFooter.textContent = Total: ${total.toFixed(2)} MRO;
     }
     if (cartCount) {
       cartCount.textContent = cart.length;
@@ -90,6 +96,8 @@ function addToCart(product, button) {
       button.classList.remove("added");
     }, 2000);
   }
+
+  cartBox.classList.add("active");
 }
 
 function removeFromCart(index) {
@@ -303,19 +311,19 @@ function initializeSearch() {
 
 // Main initialization
 document.addEventListener("DOMContentLoaded", () => {
-  initializeCart(); // This now includes loading the cart from local storage
+  initializeCart(); // This now includes loading the cart from local storage and setting up the remove event listener
   initializeDropdowns();
   initializeSearch();
   renderProducts();
 
-  // Event delegation for removing items from cart
-  document.addEventListener("click", (event) => {
-    if (event.target.classList.contains("remove-from-cart")) {
-      const index = Number.parseInt(
-        event.target.getAttribute("data-index"),
-        10
-      );
-      removeFromCart(index);
-    }
-  });
+  // Remove this block as it's now handled in initializeCart
+  // document.addEventListener("click", (event) => {
+  //   if (event.target.classList.contains("remove-from-cart")) {
+  //     const index = Number.parseInt(
+  //       event.target.getAttribute("data-index"),
+  //       10
+  //     );
+  //     removeFromCart(index);
+  //   }
+  // });
 });
