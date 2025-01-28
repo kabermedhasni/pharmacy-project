@@ -5,6 +5,7 @@ body {
   overflow-x: hidden;
 }
 
+/*
 #hero {
   position: relative;
   background-color: white;
@@ -16,16 +17,19 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
+*/
 
 .second-header {
   position: relative;
   top: -25px;
 }
 
+/*
 #hero p {
   font-size: 20px;
   margin-top: 10px;
 }
+*/
 
 .pharmacy-photo {
   position: relative;
@@ -77,14 +81,14 @@ body {
 .pharmacy-card h3 {
   margin: 0 0 10px;
   font-size: 22px;
-  color: #2a9d8f;
+  color: #4a90e2;
 }
 
-.pharmacy-card p {
-  margin: 0;
-  font-size: 16px;
-  color: #666;
-}
+  .pharmacy-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+  }
 
 @keyframes fadeInUp {
   from {
