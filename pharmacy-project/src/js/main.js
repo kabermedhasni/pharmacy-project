@@ -96,8 +96,6 @@ function addToCart(product, button) {
       button.classList.remove("added");
     }, 2000);
   }
-
-  cartBox.classList.add("active");
 }
 
 function removeFromCart(index) {
