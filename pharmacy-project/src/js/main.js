@@ -76,7 +76,7 @@ function updateCart() {
     }
 
     if (cartFooter) {
-      cartFooter.textContent = Total: ${total.toFixed(2)} MRO;
+      cartFooter.textContent = `Total: ${total.toFixed(2)} MRO`;
     }
     if (cartCount) {
       cartCount.textContent = cart.length;
