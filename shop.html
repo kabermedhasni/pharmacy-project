@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="src/images/pharmacy-svgrepo.svg">
+  </head>
+  <body>
+    <div class="custom-scrollbar" id="customScrollbar"></div>
+    <header class="header">
+      <a
+        href="https://kabermedhasni.github.io/pharmacy-project/"
+        class="logo"
+      >
+        <img src="./src/images/pharmacy-svgrepo.svg" alt="Logo" />
+        <span>Our brand</span>
+      </a>
+      <nav class="nav-center">
+        <a href="https://kabermedhasni.github.io/pharmacy-project/" class="nav-link">Home</a>
+        <a href="https://kabermedhasni.github.io/pharmacy-project/shop.html#" class="nav-link activated">Shop</a>
+        <a href="https://kabermedhasni.github.io/pharmacy-project/contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="nav-right">
+        <div class="cart-container">
+          <a class="nav-cart-link"
+            ><img
+              class="cart-icon"
+              src="src/images/cart_svgrepo.svg"
+              alt="cart-icon"
+            />
+            Cart <span class="cart-count">0</span></a
+          >
+          <div class="cart-box">
+            <div class="cart-items"></div>
+            <div class="cart-footer">
+              <div class="cart-total">Total: 0.00 MRO</div>
+              <button id="checkout-button" class="checkout-button" disabled>
+                Checkout
+              </button>
+            </div>
+            <!-- <div class="cart-scroll-indicator"></div> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="search-Full">
+      <h1>Search</h1>
+      <p class="small-text">
+        Search for medicines, supplements, and healthcare products...
+      </p>
+      <br />
+      <div class="search-box">
+        <input type="text" class="the-photo" placeholder="Search by..." />
+      </div>
+    </div>
+
+    <div class="menu-small-text">
+      <h5>Categories</h5>
+      <h6>Pharmacies</h6>
+      <h7>Forms</h7>
+      <h8>Prices</h8>
+      <h9>Sort</h9>
+    </div>
+    <div class="dropdown-container">
+      <div class="dropdown-left">
+        <!-- Dropdown 1 -->
+        <div class="menu-container" id="menu1">
+          <div class="menu-toggle" id="menuToggle1">
+            <span id="selectedCategory1">All Categories</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#4a90e2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="menu-items" id="menuItems1">
+            <div class="menu-item selected" data-category="All Categories">
+              All Categories
+            </div>
+            <div class="menu-item" data-category="Medicines">Medicines</div>
+            <div class="menu-item" data-category="Vitamines">Vitamines</div>
+            <div class="menu-item" data-category="Skincare">Skincare</div>
+            <div class="menu-item" data-category="Medical Equipment">Medical Equipment</div>
+            <div class="menu-item" data-category="Educational Material">Educational Material</div>
+            <div class="menu-item" data-category="Eye Care">Eye Care</div>
+            <div class="menu-item" data-category="Natural Remedies">Natural Remedies</div>
+            <div class="menu-item" data-category="Pet Medicines">Pet Medicines</div>
+            <div class="menu-item" data-category="Smoking Cessation">Smoking Cessation</div>
+            <div class="menu-item" data-category="Supplements">Supplements</div>
+          </div>
+        </div>
+        <!-- Dropdown 2 -->
+        <div class="menu-container" id="menu2">
+          <div class="menu-toggle" id="menuToggle2">
+            <span id="selectedCategory2">All Pharmacies</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#4a90e2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="menu-items" id="menuItems2">
+            <div class="menu-item selected" data-category="All Pharmacies">
+              All Pharmacies
+            </div>
+            <div class="menu-item" data-category="Kissi">Kissi</div>
+            <div class="menu-item" data-category="Ibn Sina">Ibn Sina</div>
+            <div class="menu-item" data-category="Nejah">Nejah</div>
+            <div class="menu-item" data-category="Chiva">Chiva</div>
+            <div class="menu-item" data-category="El Medina">El Medina</div>
+          </div>
+        </div>
+        <!-- Dropdown 3 -->
+        <div class="menu-container" id="menu3">
+          <div class="menu-toggle" id="menuToggle3">
+            <span id="selectedCategory3">All Forms</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#4a90e2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="menu-items" id="menuItems3">
+            <div class="menu-item selected" data-category="All Forms">
+              All Forms
+            </div>
+            <div class="menu-item" data-category="Tablets">Tablets</div>
+            <div class="menu-item" data-category="Capsules">Capsules</div>
+            <div class="menu-item" data-category="Syrup">Syrup</div>
+            <div class="menu-item" data-category="Cream">Cream</div>
+            <div class="menu-item" data-category="Brochure">Brochure</div>
+            <div class="menu-item" data-category="Chewable Tablets">Chewable Tablets</div>
+            <div class="menu-item" data-category="Clay">Clay</div>
+            <div class="menu-item" data-category="Drops">Drops</div>
+            <div class="menu-item" data-category="Gel">Gel</div>
+            <div class="menu-item" data-category="Gummies">Gummies</div>
+            <div class="menu-item" data-category="Inhaler">Inhaler</div>
+            <div class="menu-item" data-category="Injection">Injection</div>
+            <div class="menu-item" data-category="Liquid">Liquid</div>
+            <div class="menu-item" data-category="Lozenges">Lozenges</div>
+            <div class="menu-item" data-category="Ovules">Ovules</div>
+            <div class="menu-item" data-category="Powder">Powder</div>
+            <div class="menu-item" data-category="Sachets">Sachets</div>
+            <div class="menu-item" data-category="Spray">Spray</div>
+            <div class="menu-item" data-category="Suspension">Suspension</div>
+          </div>
+        </div>
+        <!-- Dropdown 4-->
+        <div class="menu-container" id="menu4">
+          <div class="menu-toggle" id="menuToggle4">
+            <span id="selectedCategory4">All Prices</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#4a90e2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="menu-items" id="menuItems4">
+            <div class="menu-item selected" data-category="All Prices">
+              All Prices
+            </div>
+            <div class="menu-item" data-category="0-50">0-50</div>
+            <div class="menu-item" data-category="50-100">50-100</div>
+            <div class="menu-item" data-category="100-200">100-200</div>
+            <div class="menu-item" data-category="200-500">200-500</div>
+            <div class="menu-item" data-category="500+">500+</div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-right">
+        <!-- Dropdown 5-->
+        <div class="menu-container" id="menu5">
+          <div class="menu-toggle" id="menuToggle5">
+            <span id="selectedCategory5">Most Popular</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#4a90e2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="menu-items" id="menuItems5">
+            <div class="menu-item selected" data-category="Most Popular">
+              Most Popular
+            </div>
+            <div class="menu-item" data-category="Newest first">
+              Newest first
+            </div>
+            <div class="menu-item" data-category="Oldest first">
+              Oldest first
+            </div>
+            <div class="menu-item" data-category="Closest to you">
+              Closest to you
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+        <div class="product-grid"></div>
+    </main>
+
+    <footer>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li>
+            <a href="https://kabermedhasni.github.io/pharmacy-project/">Home</a>
+          </li>
+          <li>
+            <a href="https://kabermedhasni.github.io/pharmacy-project/shop.html#">Shop</a>
+          </li>
+          <li>
+            <a href="https://kabermedhasni.github.io/pharmacy-project/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>Email: <a class="contact-email" href="mailto:L1@SupNum.mr">L1@SupNum.mr</a></p>
+        <p>Phone: +222 20 25 20 26</p>
+      </div>
+    </footer>
+
+    <script type="module" src="src/js/main.js"></script>
+  </body>
+</html>
