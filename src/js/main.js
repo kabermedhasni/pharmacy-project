@@ -436,7 +436,7 @@ function initializeCart() {
   checkoutButton.addEventListener("click", () => {
     if (cart.length > 0) {
       window.location.href =
-        "https://kabermedhasni.github.io/pharmacy-project/pharmacy-project/checkout.html";
+        "https://kabermedhasni.github.io/pharmacy-project/checkout.html";
     }
   });
 
