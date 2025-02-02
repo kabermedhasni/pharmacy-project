@@ -194,7 +194,7 @@ h9 {
   padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
-/*.Top-bar {
+/* .Top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,7 +217,7 @@ h9 {
 
 .the-middle-of-the-middle {
   color: #4a90e2;
-}*/
+} */
 
 .searchbar {
   color: #4a90e2;
@@ -249,7 +249,7 @@ input {
   border: none;
   outline: none;
   background: none;
-  color: #4a90e2;
+  color: #333;
   font-size: 20px;
   width: 100%;
 }
@@ -352,19 +352,19 @@ input {
   display: block;
 }
 
-/*.menu-items::-webkit-scrollbar-track {
+/* .menu-items::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 4px;
-}*/
+} */
 
 .menu-items::-webkit-scrollbar-thumb {
   background: #4a90e2;
   border-radius: 4px;
 }
 
-/*.menu-items::-webkit-scrollbar-thumb:hover {
+/* .menu-items::-webkit-scrollbar-thumb:hover {
   background: #555;
-}*/
+} */
 
 .menu-container.expanded .menu-items {
   opacity: 1;
@@ -511,6 +511,7 @@ input {
   border-top-right-radius: 10px;
   transition: all .2s ease;
 }
+
 
 
 .cart-item img {
@@ -813,6 +814,7 @@ footer ul li a:hover {
 .pagination-container button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+
 }
 
 /* Checkout Button Styles */
@@ -912,3 +914,10 @@ footer ul li a:hover {
   position: relative;
   bottom: -10px;
 }
+
+
+
+
+
+/* /////////////////////////////////////////// */
+
